@@ -101,3 +101,16 @@ input, textarea {
 footer {
     text-align: center;
 }
+
+.botao_voltar {
+    display: block; 
+    padding: 5px;
+    position: absolute;
+    left: 10px;
+    margin-top: 12px;
+}
+
+.botao_voltar a {
+    text-decoration: none;
+    color: inherit;
+}
