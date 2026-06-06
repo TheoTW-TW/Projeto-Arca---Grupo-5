@@ -1,0 +1,336 @@
+/* RESET E CONFIGURAÇÕES BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  background-color: rgba(237, 228, 213, 1);
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HEADER & NAVBARS */
+.main-header {
+  width: 100%;
+}
+
+.header-container {
+  background-color: rgba(133, 101, 60, 1);
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-family: 'Instrument Serif', serif;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.top-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-action {
+  background-color: rgba(166, 90, 58, 1);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: opacity 0.2s;
+}
+
+.btn-action:hover {
+  opacity: 0.9;
+}
+
+/* SUBMENU CATEGORIAS */
+.categories-nav {
+  background-color: rgba(205, 168, 115, 1);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.cat-item {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  padding: 15px 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: background 0.2s;
+}
+
+.cat-item:hover, .cat-item.active {
+  background-color: rgba(142, 182, 68, 1);
+}
+
+/* CONTEÚDO PRINCIPAL */
+.main-content {
+  flex: 1;
+  padding: 30px 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.banner-title {
+  background-color: rgba(81, 124, 19, 0.42);
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.banner-title h2 {
+  font-family: 'Instrument Serif', serif;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 400;
+}
+
+/* LAYOUT DOS DETALHES DO PET */
+.pet-details-container {
+  display: flex;
+  gap: 40px;
+  background-color: transparent;
+  align-items: flex-start;
+}
+
+/* Lado Imagem */
+.pet-image-side {
+  flex: 1;
+  min-width: 300px;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 450px;
+  background-color: #c4c4c4;
+  border: 2px dashed #85653c;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Lado Informações */
+.pet-info-side {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Grid de Informações de Texto */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+}
+
+.value-box {
+  background-color: rgba(205, 168, 115, 0.42);
+  border: 1px solid #000;
+  padding: 10px 15px;
+  font-size: 20px;
+  min-height: 48px;
+}
+
+/* Vacina */
+.vaccine-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.vaccine-options {
+  display: flex;
+  gap: 30px;
+  background-color: rgba(205, 168, 115, 0.42);
+  border: 1px solid #000;
+  padding: 10px 15px;
+  width: max-content;
+  min-width: 220px;
+}
+
+.radio-placeholder {
+  font-size: 20px;
+  position: relative;
+  padding-left: 25px;
+  color: #555;
+}
+
+.radio-placeholder::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.radio-placeholder.checked {
+  color: #000;
+  font-weight: bold;
+}
+
+.radio-placeholder.checked::before {
+  background-color: rgba(166, 90, 58, 1);
+}
+
+/* Bloco Sobre Ele */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.about-box {
+  background-color: rgba(205, 168, 115, 0.42);
+  border: 1px solid #000;
+  padding: 20px;
+  font-size: 18px;
+  min-height: 180px;
+  line-height: 1.5;
+}
+
+/* Botão Adotar */
+.action-area {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-adopt {
+  background-color: rgba(166, 90, 58, 1);
+  color: #fff;
+  padding: 12px 60px;
+  border-radius: 10px;
+  font-size: 24px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s, opacity 0.2s;
+  text-align: center;
+}
+
+.btn-adopt:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+/* RODAPÉ */
+.main-footer {
+  background-color: rgba(133, 101, 60, 1);
+  color: #fff;
+  padding: 20px 5%;
+  margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer-contacts p {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.footer-copyright {
+  font-size: 16px;
+}
+
+/* INTERFACES RESPONSIVAS (MEDIA QUERIES) */
+@media (max-width: 900px) {
+  .pet-details-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .pet-image-side, .pet-info-side {
+    width: 100%;
+  }
+
+  .image-placeholder {
+    height: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cat-item {
+    min-width: 50%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .cat-item {
+    min-width: 100%;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .vaccine-options {
+    width: 100%;
+  }
+
+  .btn-adopt {
+    width: 100%;
+    padding: 12px 20px;
+  }
+}
