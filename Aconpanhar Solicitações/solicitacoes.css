@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 header{
     display: flex;
     flex-direction: column;
@@ -15,7 +20,8 @@ header{
     align-items: center;
     height: 100%;
     max-height: 50px;
-    padding: 20px;   
+    padding: 20px;
+    gap: 6px;
 
     i{
         font-size: 30px;
@@ -24,23 +30,25 @@ header{
 }
 
 .tools_1{
-    width: 100%;
-    max-width: 240px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 8px;
 }
 
 .titulo{
     display: flex;
+    h1{
+        font-size: clamp(18px, 4vw, 40px);
+        margin: 0;
+    }
 }
 
 .tools_2{
-    width: 100%;
-    max-width: 210px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 .head_nav {
@@ -100,21 +108,36 @@ nav {
 	background: var(--nav);
 }
 
+#menu {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
 .nav__control {
 	width: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 label {
 	display: grid;
 	place-items: center;
+	height: 100%;
+	width: 100%;
 	cursor: pointer;
 }
 
 .nav__control svg {
 	width: 24px;
 	stroke-width: 2.5;
-	rotate: calc(var(--active-nav, 0) * 45deg);
-	transition: rotate var(--speed);
 }
 
 input:focus-visible + label {
@@ -150,13 +173,19 @@ input:focus-visible + label {
 
 .nav__options {
 	position: absolute;
-	right: -1rem;
+	right: 0;
 	top: 100%;
 	background: var(--nav);
-	width: calc(100% + 2rem);
-	translate: 0 calc(-100% + (var(--active-nav, 0) * (100% + 2px)));
-	transition: translate var(--speed);
-	z-index: 1;
+	width: 100%;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height var(--speed) ease;
+	z-index: 100;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#menu:checked ~ .nav__options {
+	max-height: 300px;
 }
 
 a:focus-visible {
@@ -225,6 +254,9 @@ nav a:is(:hover, :focus-visible) {
 		grid-auto-columns: 1fr;
 		position: static;
 		width: auto;
+		max-height: none;
+		overflow: visible;
+		box-shadow: none;
 		translate: 0 0;
 		z-index: 1;
 	}
@@ -423,4 +455,251 @@ nav a:is(:hover, :focus-visible) {
 			0 100%
 		);
 	}
+}
+
+/* ----------------------------- */
+.titulo_soli{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 20px;
+	background-color: #517C134D;
+	padding: 10px;
+}
+
+.seta{
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+	border: 1px solid black;
+	padding: 5px;
+	color: #ffffff;
+	cursor: pointer;
+	transition: .3s;
+	height: 35px;
+}
+
+.seta:hover{
+	filter: brightness(1.2);
+	transform: translateX(-2px);
+}
+
+.seta a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.titulo_pag{
+    display: flex;
+    justify-content: center;
+	color: #ffffff;	
+}
+
+.titulo_pag h3{
+    margin: 0;
+}
+
+/* ------------- */
+
+.solicitacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin: 40px;
+	border: 2px solid #517C13;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+.soli_{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.soli_tipo{
+	display: flex;
+	width: 100%;
+}
+
+.soli_botoes{
+	display: flex;
+	width: 100%;
+	border: 1px solid black;
+	background-color: #517C134D;
+	padding: 10px;
+	border-radius: 20px;
+	gap: 60px;
+	button{
+		width: 150px;
+	}
+}
+
+:root{
+    --bege-claro: #EDE4D5;
+    --marrom: #85653C;
+    --bege-menu: #CDA873;
+    --botao: #A65A3A;
+    --texto: #1f1f1f;
+}
+
+/* ================= GLOBAL ================= */
+
+html,
+body{
+    background-color: var(--bege-claro);
+}
+
+button{
+    background: var(--botao);
+    color: white;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 8px;
+    padding: 6px 18px;
+    transition: .3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,.25);
+    cursor: pointer;
+}
+
+button:hover{
+    transform: translateY(-2px);
+    filter: brightness(1.08);
+}
+
+/* ================= HEADER ================= */
+
+.head_superior{
+    background: var(--marrom);
+    color: white;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.titulo h1{
+    color: white;
+    font-family: Georgia, serif;
+    letter-spacing: 1px;
+}
+
+.head_superior i{
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.head_superior i:hover{
+    filter: brightness(1.3);
+    transform: scale(1.1);
+}
+
+/* ================= MENU ================= */
+
+nav{
+    background: var(--bege-menu);
+}
+
+.nav__content{
+    background: var(--bege-menu);
+}
+
+.nav__options{
+    background: var(--bege-menu);
+}
+
+.nav__options a{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav__options a:hover{
+    background: rgba(0,0,0,.08);
+}
+
+.head_nav{
+    background-color: #CDA873 !important;
+}
+
+nav{
+    background-color: #CDA873 !important;
+}
+
+.nav__content{
+    background-color: #CDA873 !important;
+}
+
+.nav__options{
+    background-color: #CDA873 !important;
+}
+
+.link{
+    background-color: #CDA873 !important;
+    color: white !important;
+}
+
+.link::before{
+    background-color: #CDA873 !important;
+}
+
+.nav__options a{
+    color: white !important;
+}
+
+.nav__options a:hover{
+    background-color: rgba(0,0,0,.08) !important;
+}
+
+/* ================= FOOTER ================= */
+
+.footer_area{
+    background: var(--marrom);
+    color: white;
+    box-shadow: none;
+}
+
+.footer_area a,
+.footer_area p,
+.footer_area h5,
+.footer_area li{
+    color: white !important;
+}
+
+.footer_social_area a{
+    background: rgba(255,255,255,.15);
+}
+
+.footer_social_area a:hover{
+    background: var(--botao);
+    color: white;
+}
+
+/* ================= BOOTSTRAP ================= */
+
+.container,
+.container-fluid,
+.row{
+    background: transparent;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+    .nav__options a{
+        color: white;
+        background: var(--bege-menu);
+    }
+
+    .caixa_text{
+        padding: 20px;
+    }
+
+    .caixa_text h3{
+        font-size: 32px;
+    }
 }

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style_home.css">
+    <link rel="stylesheet" href="style_footer.css">
+</head>
+<body>
+
+  <div class="container_home">
+    <section id="HOME">
+
+      <header>
+        <div class="head_superior">
+          <div class="tools_1">
+            <div class="perfil_wrapper">
+              <i class="fa-regular fa-circle-user" id="perfil_btn" onclick="togglePerfil()"></i>
+              <div class="perfil_dropdown" id="perfil_dropdown">
+                <button class="entrar">ENTRAR</button>
+                <button class="entrar">CADASTRAR</button>
+              </div>
+            </div>
+          </div>
+          <div class="titulo">
+            <h1>TITULO</h1>
+          </div>
+          <div class="tools_2">
+            <a href="#">
+              <i class="fa-regular fa-circle-question"></i>
+            </a>
+            <button class="entrar">SOBRE</button>
+            <a href="#">
+              <i class="fa-solid fa-house"></i>
+            </a>
+         </div>
+        </div>
+
+        <div class="head_nav">
+          <nav>
+            <div class="nav__content">
+
+              <input type="checkbox" id="menu" class="sr-only">
+              <div class="nav__control">
+                <label for="menu" aria-label="Abrir menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                  </svg>
+                </label>
+              </div>
+
+              <div class="nav__options">
+                <a class="link" href="#">
+                  <span>Adoção</span>
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+                  </svg>
+                </a>
+                <a class="link" href="#">
+                  <span>Atendimento Veterinário</span>
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+                  </svg>
+                </a>
+                <a class="link" href="#">
+                  <span>Acompanhar Solicitações</span>
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+                  </svg>
+                </a>
+                <a class="link ebook" href="#">
+                  <span>Denuncie!</span>
+                  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <div class="carrosel_imagens">
+        <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <div class="mask flex-center">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-7 col-12 order-md-1 order-2">
+                      <h4>Dê um lar <br> a um novo amigo!</h4>
+                      <p>Adote hoje um animal e volte para sua casa feliz sabendo que fez a escolha certa!</p>
+                    </div>
+                    <div class="col-md-5 col-12 order-md-2 order-1">
+                      <img src="Imagens/imagem-carrosel_1.png" class="mx-auto" alt="slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="mask flex-center">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-7 col-12 order-md-1 order-2">
+                      <h4>Atendimento para <br> todos os pets!</h4>
+                      <p>Aqui você encontra todo tipo de tratamento independente de quem seja seu pet.</p>
+                    </div>
+                    <div class="col-md-5 col-12 order-md-2 order-1">
+                      <img src="Imagens/imagem_carrosel_2.png" class="mx-auto" alt="slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="mask flex-center">
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-7 col-12 order-md-1 order-2">
+                      <h4>Cuide bem <br> de quem te ama!</h4>
+                      <p>Não deixe de cuidar do amigo que tanto te ama. Entre em contato conosco e comece já!</p>
+                    </div>
+                    <div class="col-md-5 col-12 order-md-2 order-1">
+                      <img src="Imagens/imagem_carrosel_3.png" class="mx-auto" alt="slide">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="home_page">
+
+        <div class="secao_foto_texto">
+          <img src="Imagens/imagem_pet_1.png" alt="Adoções">
+          <div class="caixa_text">
+            <h3>Adoções</h3>
+            <p>Veja as opções disponíveis perto de você!</p>
+            <button>Saiba Mais</button>
+          </div>
+        </div>
+
+        <div class="secao_texto_foto">
+          <div class="caixa_text">
+            <h3>Atendimento Veterinário</h3>
+            <p>Veja os atendimentos que seu pet pode ter!</p>
+            <button>Saiba Mais</button>
+          </div>
+          <img src="Imagens/imagem_pet_2.png" alt="Veterinário">
+        </div>
+
+        <div class="secao_foto_texto">
+          <img src="Imagens/imagem_pet_3.png" alt="Solicitações">
+          <div class="caixa_text">
+            <h3>Acompanhar Solicitações</h3>
+            <p>Acompanhe as solicitações marcadas na conta!</p>
+            <button>Saiba Mais</button>
+          </div>
+        </div>
+
+        <div class="secao_texto_foto">
+          <div class="caixa_text">
+            <h3>Denunciar</h3>
+            <p>Maus tratos aos animais é CRIME!<br>Denuncie e nos ajude a salvar vidas.</p>
+            <button>Saiba Mais</button>
+          </div>
+          <img src="Imagens/imagem_pet_4.png" alt="Denunciar">
+        </div>
+
+      </div>
+
+    </section>
+  </div>
+
+  <footer class="footer_area section_padding_130_0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-4">
+          <div class="single-footer-widget section_padding_0_130">
+            <div class="footer-logo mb-3"></div>
+            <p>Tecnologia a serviço do cuidado e bem-estar animal.</p>
+            <div class="copywrite-text mb-5">
+              <p class="mb-0">Feito <i class="lni-heart mr-1"></i>por <a class="ml-1" href="#">Grupo 6</a></p>
+            </div>
+            <div class="footer_social_area">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget section_padding_0_130">
+            <h5 class="widget-title">Sobre</h5>
+            <div class="footer_menu">
+              <ul>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Termos &amp; Política</a></li>
+                <li><a href="#">Comunidade</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget section_padding_0_130">
+            <h5 class="widget-title">Suporte</h5>
+            <div class="footer_menu">
+              <ul>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="#">Privacidade e Política</a></li>
+                <li><a href="#">Termos &amp; Condições</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg">
+          <div class="single-footer-widget section_padding_0_130">
+            <h5 class="widget-title">Contatos</h5>
+            <div class="footer_menu">
+              <ul>
+                <li><a href="#">Call Center</a></li>
+                <li><a href="#">Nosso Email</a></li>
+                <li><a href="#">Central de Ajuda</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function togglePerfil() {
+      var d = document.getElementById('perfil_dropdown');
+      d.classList.toggle('aberto');
+    }
+
+    document.addEventListener('click', function(e) {
+      var wrapper = document.querySelector('.perfil_wrapper');
+      if (wrapper && !wrapper.contains(e.target)) {
+        document.getElementById('perfil_dropdown').classList.remove('aberto');
+      }
+    });
+  </script>
+
+</body>
+</html>
