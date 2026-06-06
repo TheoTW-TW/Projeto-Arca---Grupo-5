@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção de Animais</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style_header.css">
+    <link rel="stylesheet" href="adocao_home.css">
+</head>
+<body>
+    <div class="container_adocao">
+        <div id="ADOCAO">
+
+            <!-- Header -->
+            <header>
+                <div class="head_superior">
+                    <div class="tools_1">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <button class="entrar">ENTRAR</button>
+                        <button class="entrar">CADASTRAR</button>
+                    </div>
+
+                    <div class="titulo">
+                        <h1>TITULO</h1>
+                    </div>
+
+                    <div class="tools_2">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <button class="entrar">SOBRE</button>
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                </div>
+
+                <!-- Navegação -->
+                <div class="head_nav">
+                    <nav>
+                        <div class="nav__content">
+                            <div class="nav__options">
+                                <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <span>Adoção</span>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </a>
+                                <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <span>Atendimento Veterinário</span>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </a>
+                                <a class="link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <span>Acompanhar Solicitações</span>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </a>
+                                <a class="link ebook" href="#" target="_blank" rel="noopener noreferrer">
+                                    <span>Denuncie!</span>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- Fim da Navegação -->
+            </header>
+            <!-- Fim Header -->
+
+            <div class="titulo_botao">
+                <!-- Botão de voltar -->
+                <button class="botao_voltar">
+                    <a href="#home">← VOLTAR</a>
+                </button>
+                <!-- Fim Botão de voltar -->
+
+                <div class="tituloh2">
+                    <h2>Opções para adoção</h2>
+                </div>
+
+                <div class="espaco_direita"></div>
+                
+            </div>
+
+            <!-- Carousel 1 - Cães -->
+            <div class="carousel-wrapper">
+                <div class="carousel-section">
+                    <div class="section-title">
+                        <h3>🐕 Cães para Adoção</h3>
+                        <p>Encontre seu melhor amigo</p>
+                    </div>
+                    <div id="carouselCachorros" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselCachorros" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselCachorros" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselCachorros" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://via.placeholder.com/1200x400/FF6B6B/FFFFFF?text=Dog+1+-+Labrador" class="d-block w-100" alt="Labrador">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Labrador - 2 anos</h5>
+                                    <p>Manso, brincalhão e adora crianças! Ideal para famílias.</p>
+                                    <button class="btn-adotar">Quero Adotar!</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/1200x400/4ECDC4/FFFFFF?text=Dog+2+-+Vira+Lata" class="d-block w-100" alt="Vira Lata">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Caramelo - 1 ano</h5>
+                                    <p>Muito carinhoso e leal. Precisa de um lar cheio de amor!</p>
+                                    <button class="btn-adotar">Quero Adotar!</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/1200x400/45B7D1/FFFFFF?text=Dog+3+-+Poodle" class="d-block w-100" alt="Poodle">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Poodle - 3 anos</h5>
+                                    <p>Inteligente, adora aprender truques e é muito apegado.</p>
+                                    <button class="btn-adotar">Quero Adotar!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCachorros" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCachorros" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel 2 - Gatos -->
+            <div class="carousel-wrapper">
+                <div class="carousel-section">
+                    <div class="section-title">
+                        <h3>🐱 Gatos para Adoção</h3>
+                        <p>Um amigo peludo espera por você</p>
+                    </div>
+                    <div id="carouselGatos" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselGatos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselGatos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselGatos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://via.placeholder.com/1200x400/FFA07A/FFFFFF?text=Cat+1+-+Siamês" class="d-block w-100" alt="Siamês">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Siamês - 1 ano</h5>
+                                    <p>Elegante, carinhoso e muito sociável!</p>
+                                    <button class="btn-adotar">Quero Adotar!</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/1200x400/98D8C8/FFFFFF?text=Cat+2+-+Persa" class="d-block w-100" alt="Persa">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Persa - 2 anos</h5>
+                                    <p>Tranquilo, adora dormir no colo e é muito fofo!</p>
+                                    <button class="btn-adotar">Quero Adotar!</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/1200x400/F7DC6F/FFFFFF?text=Cat+3+-+Laranja" class="d-block w-100" alt="Laranja">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Laranjinha - 6 meses</h5>
+                                    <p>Brincalhão, curioso e cheio de energia!</p>
+                                    <button class="btn-adotar">Quero Adotar!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselGatos" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselGatos" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel 3 - Outros Animais -->
+            <div class="carousel-wrapper">
+                <div class="carousel-section">
+                    <div class="section-title">
+                        <h3>🐰 Outros Animais</h3>
+                        <p>Pequenos grandes amigos</p>
+                    </div>
+                    <div id="carouselOutros" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselOutros" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselOutros" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselOutros" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://via.placeholder.com/1200x400/DDA0DD/FFFFFF?text=Coelho" class="d-block w-100" alt="Coelho">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Coelho - 8 meses</h5>
+                                    <p>Fofinho, dócil e fácil de cuidar!</p>
+                                    <button class="btn-adotar">Quero Adotar!</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/1200x400/F0E68C/FFFFFF?text=Hamster" class="d-block w-100" alt="Hamster">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Hamster - 3 meses</h5>
+                                    <p>Pequenino, ativo e muito engraçado!</p>
+                                    <button class="btn-adotar">Quero Adotar!</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/1200x400/87CEEB/FFFFFF?text=Passarinho" class="d-block w-100" alt="Passarinho">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Calopsita - 1 ano</h5>
+                                    <p>Canta, interage e é muito inteligente!</p>
+                                    <button class="btn-adotar">Quero Adotar!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselOutros" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselOutros" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próximo</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoL3zJE6mI8rCt9u5zL5l5I5t5O5t5l5I5t5O5t5l5I5t5O5" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #161515;
+}
+
+.titulo_botao {
+    display: flex;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tituloh2 {
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+}
+
+.tituloh2 h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.botao_voltar {
+    display: block; 
+    padding: 5px;
+    position: absolute;
+    left: 10px;
+}
+
+.botao_voltar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main_conteudo {
+  display: flex;
+  width: 100%;
+}
+
+
+/*---- carousel ----*/
+
+.carousel {
+  
+}
