@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style_header.css">
+    <link rel="stylesheet" href="denuncia.css">
+</head>
+<body>
+    <div class="container_denuncia">
+        <div id="DENUNCIA">
+
+            <!-- Header -->
+            <header>
+
+                <!-- Head superior -->
+                <div class="head_superior">
+                    <div class="tools_1">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <button class="entrar">ENTRAR</button>
+                        <button class="entrar">CADASTRAR</button>
+                    </div>
+
+                    <div class="titulo">
+                        <h1>Denúncias</h1>
+                    </div>
+
+                    <div class="tools_2">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <button class="entrar">SOBRE</button>
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                </div>
+                <!-- Fim head superior -->
+
+                <!-- Navegação --> 
+                <div class="head_nav">
+                    <nav>
+                        <div class="nav__content">
+                            <div class="nav__options">
+                                <a class="link" href="https://twitter.com/intent/follow?screen_name=jh3yy" target="_blank"
+                                rel="noopener noreferrer">
+                                    <span>Adoção</span>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </a>
+                                <a class="link" href="www.youtube.com/@jh3y" target="_blank" rel="noopener noreferrer">
+                                    <span>Atendimento Veterinário</span>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </a>
+                                <a class="link" href="https://codepen.io/jh3y" target="_blank" rel="noopener noreferrer">
+                                    <span>Acompanhar Solicitaçãoes</span>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </a>
+                                <a class="link ebook" href="https://gumroad.com/l/move-things-with-css/" target="_blank"
+                                rel="noopener noreferrer">
+                                    <span>Denuncie!</span>
+                                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <!-- Fim da Navegação -->
+
+            </header>
+            <!-- Fim Header -->
+
+            <!-- Botão de voltar -->
+            <button class="botao_voltar">
+                <a href="#home"><-- VOLTAR</a>
+            </button>
+            <!-- Fim Botão de voltar -->
+
+            <!-- Formulário Denúncia -->
+            <div class="form">
+                <form action="" class="formularioDenuncia">
+                    <h2>Sua denuncia</h2>
+                    <div class="nome">
+                        <h5>Seu nome:</h5>
+                        <input placeholder="Seu nome" type="text" title="Nome">
+                    </div>
+                    
+                    <div class="detalhes">
+                        <h5>Detelhes:</h5>
+                        <textarea name="detelhes_denuncia" id="textoDenuncia" placeholder="Conte os detalhes do caso" title="Detalhes"></textarea>
+                    </div>
+
+                    <div class="localizacao">
+
+                        <h5>Deseja compartilhar sua localização?</h5>
+                        <div class="grid_container">
+                            <label>
+                                <input type="radio" name="interesses" value="sim"> Sim
+                            </label>
+                            <label>
+                                <input type="radio" name="interesses" value="nao"> Não
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="endereco">
+                        <h5>Adicione o Endereço:</h5>
+                        <input placeholder="Endereço"  type="text" title="Endereço">
+                    </div>
+                    
+                    <div class="imagens">
+                        <h5>Adicione imagens:</h5>
+                        
+                        <label for="upload-imagem"></label>
+                        <input type="file" id="upload-imagem" name="imagem" accept="image/*">
+                    </div>
+
+                    <div class="botoes">
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                        <button type="button" class="btn-cancelar">Cancelar</button>
+                    </div>
+
+                </form>
+            </div>
+            <!-- Fim formulário Denúncia -->
+        </div>
+        <!-- Fim id_DENUNCIA -->
+
+    </div>
+    <footer>
+        <p> Footer place holder</p>
+    </footer>
+</body>
+</html>
