@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: left;
+} 
+
+.formularioDenuncia {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000000;
+  padding: 50px 100px 50px 100px ;
+  align-items: flex-start;
+  text-align: left;
+
+}
+
+.nome,
+.detalhes,
+.localizacao,
+.endereco,
+.imagens {
+  width: 100%;
+}
+
+input, textarea {
+  width: 100%;
+}
+
+.nome {
+    align-self: baseline;
+    text-align: left;
+    margin-bottom: 35px;
+    margin-top: 65px;
+}
+
+.detalhes {
+    align-items: baseline;
+    text-align: left;
+    margin-bottom: 35px;
+}
+
+.localizacao {
+    align-items: baseline;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.endereco {
+    align-items: baseline;
+    margin-bottom: 65px;
+}
+
+.imagens h5,label{
+    margin-bottom: 10px;
+
+}
+
+.botoes {
+  display: flex;
+  margin-top: 65px;
+  justify-content: space-between;
+  gap: 90px;
+  width: 100%;
+}
+
+.botoes button {
+  flex: 1;
+  padding: 15px 50px 15px 50px;
+  cursor: pointer;
+}
+
+.grid_container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+
+.grid_container label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+.botao_voltar {
+    display: block; 
+    padding: 5px;
+    position: absolute;
+    left: 10px;
+    margin-top: 12px;
+}
+
+.botao_voltar a {
+    text-decoration: none;
+    color: inherit;
+}
