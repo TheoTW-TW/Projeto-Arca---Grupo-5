@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCA - Denúncia de Maus-Tratos</title>
+    <link href="https://fonts.googleapis.com/css?family=Instrument+Serif&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="denuncia.css">
+</head>
+<body>
+
+    <!-- HEADER IDÊNTICO À PÁGINA DE ADOÇÃO -->
+    <header class="main-header">
+        <div class="header-container">
+            <h1 class="logo">ARCA</h1>
+            <nav class="top-nav">
+                <a href="#" class="btn-action">Entrar</a>
+                <a href="#" class="btn-action">Cadastrar</a>
+                <a href="#" class="btn-action">Sobre</a>
+            </nav>
+        </div>
+
+        <!-- SUB-MENU / CATEGORIAS (com destaque para Denúncias) -->
+        <nav class="categories-nav">
+            <a href="adocao_home.html" class="cat-item">Adoção</a>
+            <a href="#" class="cat-item">Atendimento Veterinário</a>
+            <a href="#" class="cat-item">Acompanhar Solicitações</a>
+            <a href="#" class="cat-item active">Denúncias</a>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (Formulário de Denúncia) -->
+    <main class="main-content">
+        <!-- Botão de voltar -->
+        <div class="back-link-wrapper">
+            <a href="adocao_home.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> VOLTAR
+            </a>
+        </div>
+
+        <div class="banner-title">
+            <h2>Registre sua denúncia</h2>
+        </div>
+
+        <div class="form-container">
+            <h3 class="form-title"><i class="fas fa-paw"></i> Formulário de Denúncia</h3>
+
+            <form id="denunciaForm" class="formularioDenuncia">
+                <!-- Nome -->
+                <div class="form-group nome">
+                    <h5><i class="fa-regular fa-user"></i> Seu nome:</h5>
+                    <input type="text" id="nomeDenunciante" placeholder="Digite seu nome completo ou apelido" required>
+                </div>
+
+                <!-- Detalhes -->
+                <div class="form-group detalhes">
+                    <h5><i class="fa-regular fa-file-lines"></i> Detalhes do caso:</h5>
+                    <textarea id="detalhesCaso" placeholder="Descreva detalhadamente a situação, data, tipo de maus-tratos, informações importantes..." required></textarea>
+                </div>
+
+                <!-- Compartilhar localização (radios) -->
+                <div class="form-group localizacao">
+                    <h5><i class="fa-solid fa-location-dot"></i> Deseja compartilhar sua localização?</h5>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="compartilharLocal" value="sim"> Sim
+                        </label>
+                        <label>
+                            <input type="radio" name="compartilharLocal" value="nao" checked> Não
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Endereço -->
+                <div class="form-group endereco">
+                    <h5><i class="fa-solid fa-map-pin"></i> Endereço da ocorrência:</h5>
+                    <input type="text" id="enderecoOcorrencia" placeholder="Rua, número, bairro, cidade - referência">
+                </div>
+
+                <!-- Imagens -->
+                <div class="form-group imagens">
+                    <h5><i class="fa-regular fa-image"></i> Adicione imagens (opcional):</h5>
+                    <div class="custom-file">
+                        <input type="file" id="uploadImagem" name="imagem" accept="image/*" multiple>
+                        <div class="file-label">
+                            <span><i class="fa-solid fa-cloud-upload-alt"></i> Clique ou arraste arquivos</span>
+                            <span>JPG, PNG até 5MB</span>
+                        </div>
+                    </div>
+                    <div id="fileList" class="file-list"></div>
+                </div>
+
+                <!-- Botões -->
+                <div class="botoes">
+                    <button type="submit" class="btn-enviar">Enviar Denúncia</button>
+                    <button type="button" class="btn-cancelar">Cancelar</button>
+                </div>
+
+                <!-- Mensagem de feedback -->
+                <div id="mensagemFeedback" class="mensagem-feedback"></div>
+            </form>
+        </div>
+    </main>
+
+    <!-- RODAPÉ IDÊNTICO À PÁGINA DE ADOÇÃO -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-contacts">
+                <p>(27)99900-7765</p>
+                <p>projetoarca@gmail.com</p>
+                <p>@projetoarcaserra</p>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright©2026 - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="denuncia.js"></script>
+</body>
+</html>
