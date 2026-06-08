@@ -4,15 +4,14 @@
     --bege-menu: #CDA873;
     --botao: #A65A3A;
     --texto: #1f1f1f;
-    --nav: #CDA873;
-    --bg: hsl(0 0% 90%);
-    --speed: 0.25s;
 }
 
 html, body{
     max-width: 100%;
     overflow-x: hidden;
     background-color: var(--bege-claro);
+    margin: 0;
+    padding: 0;
 }
 
 *,
@@ -30,7 +29,6 @@ button{
     transition: .3s;
     box-shadow: 0 2px 4px rgba(0,0,0,.25);
     cursor: pointer;
-    text-decoration: none;
 }
 
 button:hover{
@@ -74,11 +72,13 @@ button:hover{
   text-decoration: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: opacity 0.2s;
+  border: none;
 }
 
 .btn-action:hover {
   opacity: 0.9;
   color: #fff;
+  transform: translateY(-2px);
 }
 
 .categories-nav {
@@ -106,35 +106,6 @@ button:hover{
   color: #fff;
 }
 
-.footer_area{
-    background: var(--marrom);
-    color: white;
-    box-shadow: none;
-}
-
-.footer_area a,
-.footer_area p,
-.footer_area h5,
-.footer_area li{
-    color: white !important;
-    text-decoration: none;
-}
-
-.footer_social_area a{
-    background: rgba(255,255,255,.15);
-}
-
-.footer_social_area a:hover{
-    background: var(--botao);
-    color: white;
-}
-
-.container,
-.container-fluid,
-.row{
-    background: transparent;
-}
-
 .titulo_soli{
     position: relative;
     width: 100%;
@@ -144,6 +115,7 @@ button:hover{
     margin-top: 20px;
     background-color: #517C134D;
     padding: 10px;
+    
 }
 
 .seta{
@@ -158,11 +130,13 @@ button:hover{
     cursor: pointer;
     transition: .3s;
     height: 35px;
+    border-radius: 5px;
 }
 
 .seta:hover{
     filter: brightness(1.2);
     transform: translateX(-2px);
+    background: rgba(0,0,0,0.1);
 }
 
 .seta a{
@@ -179,57 +153,153 @@ button:hover{
 
 .titulo_pag h3{
     margin: 0;
+    color: #ffffff;
+    
 }
 
-.solicitacoes{
+.container_atendimento{
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.form_atendimento{
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    margin: 40px;
-    border: 2px solid #517C13;
-    border-radius: 20px;
-    padding: 30px;
+    gap: 24px;
+    width: 100%;
+    max-width: 900px;
+    align-items: center;
 }
 
-.soli_{
+.linha_dupla{
     display: flex;
+    justify-content: space-between;
     width: 100%;
+    gap: 40px;
+}
+
+.campo{
+    display: flex;
     flex-direction: column;
-    padding: 10px;
+    gap: 6px;
+    width: 100%;
+    max-width: 280px;
 }
 
-.soli_tipo{
+.campo label {
+    font-weight: 600;
+}
+
+.campo input{
+    height: 35px;
+    border: 1px solid #000;
+    padding: 4px 8px;
+    background-color: #CDA87342;
+    border-radius: 4px;
+}
+
+.campo_saude, .campo_atendimento{
     display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
     width: 100%;
 }
 
-.soli_botoes{
+.caixa_opcoes{
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: #CDA87342;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.opcoes_saude{
     display: flex;
+    gap: 40px;
+}
+
+.opcoes_saude label, .opcoes_atendimento label{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.campo_detalhes{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
     width: 100%;
-    border: 1px solid black;
-    background-color: #517C134D;
-    padding: 10px;
-    border-radius: 20px;
-    gap: 60px;
+}
+
+.campo_detalhes input{
+    width: 100%;
+    max-width: 380px;
+    height: 35px;
+    border: 1px solid #000;
+    padding: 4px 8px;
+    background-color: #CDA87342;
+    border-radius: 4px;
+}
+
+.opcoes_atendimento{
+    display: flex;
+    gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
-.soli_botoes button{
-    width: 150px;
+.btn_saiba{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 @media (max-width: 768px) {
-    .solicitacoes{
-        margin: 15px;
-        padding: 15px;
-        gap: 30px;
+    .linha_dupla{
+        flex-direction: column;
+        gap: 16px;
     }
+    .campo{
+        max-width: 100%;
+    }
+    .campo_detalhes input{
+        width: 100%;
+    }
+    .opcoes_atendimento{
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+}
 
-    .soli_botoes{
-        gap: 15px;
-    }
+.footer_area{
+    background: var(--marrom);
+    color: white;
+    box-shadow: none;
+}
 
-    .soli_botoes button{
-        width: auto;
-    }
+.footer_area a,
+.footer_area p,
+.footer_area h5,
+.footer_area li{
+    color: white !important;
+}
+
+.footer_social_area a{
+    background: rgba(255,255,255,.15);
+}
+
+.footer_social_area a:hover{
+    background: var(--botao);
+    color: white;
+}
+
+.container,
+.container-fluid,
+.row{
+    background: transparent;
 }
