@@ -243,3 +243,29 @@ a {
     gap: 10px;
   }
 }
+
+/* Botão voltar */
+.back-link-wrapper {
+    margin-bottom: 20px;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(133, 101, 60, 0.15);
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-weight: 600;
+    color: #5c401f;
+    transition: background 0.2s;
+    font-size: 14px;
+}
+
+.back-link i {
+    font-size: 14px;
+}
+
+.back-link:hover {
+    background: rgba(133, 101, 60, 0.3);
+}
