@@ -201,7 +201,6 @@ html, body {
 #myCarousel {
     position: relative;
     z-index: 1;
-    background: url(https://i.imgur.com/6axE29k.jpg) center center no-repeat;
     background-size: cover;
 }
 
